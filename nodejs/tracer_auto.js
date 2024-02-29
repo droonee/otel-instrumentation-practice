@@ -8,6 +8,7 @@ const { BatchSpanProcessor } = require("@opentelemetry/sdk-trace-base");
 
 const { OTLPTraceExporter } = require("@opentelemetry/exporter-trace-otlp-proto");
 const { registerInstrumentations } = require("@opentelemetry/instrumentation");
+const { HttpInstrumentation } = require('@opentelemetry/instrumentation-http');
 const { getNodeAutoInstrumentations } = require("@opentelemetry/auto-instrumentations-node");
 
 module.exports = (serviceName) => {
