@@ -32,9 +32,6 @@ function makeRequest() {
     }
   );
 
-  console.log(
-    "Sleeping 5 seconds before shutdown to ensure all records are flushed."
-  );
   setTimeout(() => {
     console.log("Client operation complete.");
   }, 5000);
