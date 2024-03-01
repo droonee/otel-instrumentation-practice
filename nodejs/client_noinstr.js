@@ -21,7 +21,7 @@ function makeRequest() {
     {
       host: "localhost",
       port: 8080,
-      path: "/goodbyeworld",
+      path: "/pathtosomething",
     },
     (response) => {
       const body = [];
@@ -32,9 +32,7 @@ function makeRequest() {
     }
   );
 
-  setTimeout(() => {
-    console.log("Client operation complete.");
-  }, 5000);
+  console.log("Client operation complete.");
 }
 
 makeRequest();
